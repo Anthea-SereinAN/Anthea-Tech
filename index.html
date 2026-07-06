@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 【可编辑】页面标题，会显示在浏览器标签页 -->
+  <title>安珈瑶 · 法律×AI 探索者</title>
+  <!-- 【可编辑】页面描述，会显示在搜索引擎结果里 -->
+  <meta name="description" content="安珈瑶 — 北京大学法律硕士，探索法律与AI的交叉领域。独立完成多个技术项目，拥有法院与律所实习经验。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== 编辑指南 ==================== -->
+<!-- 1. 用VS Code打开这个文件 -->
+<!-- 2. 找到下面的【可编辑区域】注释 -->
+<!-- 3. 直接修改文字内容，保存 -->
+<!-- 4. 推送到GitHub，Cloudflare Pages自动更新 -->
+<!-- ================================================ -->
+
+<!-- 弥散光背景 -->
+<div class="aurora">
+  <div class="aurora-blob"></div>
+  <div class="aurora-blob"></div>
+  <div class="aurora-blob"></div>
+</div>
+
+<!-- 顶部进度条 -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- 顶部导航 -->
+<nav class="topnav" id="topnav">
+  <a href="#hero" class="topnav-brand">
+    <span class="topnav-brand-dot"></span>
+    <!-- 【可编辑】导航栏上的名字 -->
+    安珈瑶
+  </a>
+  <div class="topnav-links">
+    <a href="#about" class="topnav-link">关于</a>
+    <a href="#education" class="topnav-link">教育</a>
+    <a href="#experience" class="topnav-link">实习</a>
+    <a href="#projects" class="topnav-link">项目</a>
+    <a href="#campus" class="topnav-link">校园</a>
+    <a href="#skills" class="topnav-link">技能</a>
+    <a href="#contact" class="topnav-link">联系</a>
+  </div>
+</nav>
+
+<!-- 返回顶部 -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ============ 封面 ============ -->
+<!-- 【可编辑区域】封面部分 -->
+<section class="hero" id="hero">
+  <!-- 封面两侧装饰标签，填充视觉空白 -->
+  <div class="hero-deco hero-deco-left" aria-hidden="true">
+    <span class="hero-deco-item">Legal AI</span>
+    <span class="hero-deco-item">Vibe Coding</span>
+    <span class="hero-deco-item">Civil Law</span>
+  </div>
+  <div class="hero-deco hero-deco-right" aria-hidden="true">
+    <span class="hero-deco-item">PKU</span>
+    <span class="hero-deco-item">Product</span>
+    <span class="hero-deco-item">Data</span>
+  </div>
+  <div class="hero-container">
+    <div class="hero-main">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <!-- 【可编辑】封面小标签 -->
+        北京大学法律硕士 · 在读
+      </div>
+      <!-- 【可编辑】名字 -->
+      <p class="hero-greeting">安珈瑶</p>
+      <!-- 【可编辑】主标题 -->
+      <h1 class="hero-name">法律 × AI 探索者</h1>
+      <!-- 【可编辑】副标题 -->
+      <p class="hero-tagline">
+        北京大学法律硕士 · 中山大学金融学本科<br>
+        <!-- 【可编辑】个人标签 -->
+        <strong>法律 + 金融 + 技术</strong> 的跨界实践
+      </p>
+      <!-- 封面联系方式 -->
+      <div class="hero-contact">
+        <a href="tel:13739726919" class="hero-contact-item">📱 137-3972-6919</a>
+        <a href="mailto:jiayaoan25@stu.pku.edu.cn" class="hero-contact-item">✉️ jiayaoan25@stu.pku.edu.cn</a>
+        <span class="hero-contact-item">📍 北京市海淀区 · 北京大学</span>
+        <span class="hero-contact-item">🎓 2028届</span>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <!-- 【可编辑】数据1 -->
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-label">技术项目</div>
+        </div>
+        <div class="hero-stat">
+          <!-- 【可编辑】数据2 -->
+          <div class="hero-stat-num">2段</div>
+          <div class="hero-stat-label">专业实习</div>
+        </div>
+        <div class="hero-stat">
+          <!-- 【可编辑】数据3 -->
+          <div class="hero-stat-num">3.8</div>
+          <div class="hero-stat-label">北大 GPA</div>
+        </div>
+      </div>
+      <!-- 【可编辑】按钮文字 -->
+      <a href="#about" class="hero-cta">探索我的作品 ↓</a>
+    </div>
+    <!-- 【可编辑】封面证件照 -->
+    <div class="hero-portrait">
+      <img src="images/portrait.jpg" alt="安珈瑶证件照" class="hero-portrait-img">
+    </div>
+  </div>
+  <div class="hero-divider"></div>
+</section>
+
+<!-- ============ 关于我 ============ -->
+<!-- 【可编辑区域】关于我部分 -->
+
+<section class="section" id="about">
+  <!-- about section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">AI</span>
+    <span class="section-deco-item">金融</span>
+    <span class="section-deco-item">法律</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">PKU</span>
+    <span class="section-deco-item">SYSU</span>
+    <span class="section-deco-item">28届</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ ABOUT</span>
+    <h2 class="section-title">关于我</h2>
+    <p class="section-subtitle">从法学到技术的探索之路</p>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <!-- 【可编辑】第一段自我介绍 -->
+      <p>
+        我是安珈瑶，<strong class="highlight">北京大学法律硕士</strong>在读，本科毕业于<strong class="highlight">中山大学金融学</strong>专业。
+        我是一个乐于探索新事物的人，因此我不仅在法学研究中深耕，
+        也独立探索技术项目的开发与实践。
+      </p>
+      <!-- 【可编辑】第二段自我介绍 -->
+      <p>
+        掌握 <span class="highlight">Vibe Coding</span> 基本技巧，熟练使用 <span class="highlight">VS Code、WorkBuddy、Trae、DeepSeek</span> 等 AI 工具，
+        通过 <span class="highlight">Claude Code + DeepSeek</span> 搭建环境，
+        配合 WorkBuddy 完成多个独立项目。
+      </p>
+      <!-- 【可编辑】第三段自我介绍 -->
+      <!-- 提示：如需补充更多内容，可在此添加段落 -->
+    </div>
+    <div class="about-photo">
+      <!-- 【可编辑】生活照 -->
+      <img src="images/life.jpg" alt="安珈瑶生活照" class="about-photo-img">
+    </div>
+  </div>
+  <div class="about-cards reveal-stagger">
+        <!-- 【可编辑】数据卡片1 -->
+        <div class="about-card">
+          <div class="about-card-num">3</div>
+          <div class="about-card-label">独立技术项目</div>
+          <div class="about-card-sub">从需求到应用全流程</div>
+        </div>
+        <!-- 【可编辑】数据卡片2 -->
+        <div class="about-card">
+          <div class="about-card-num">2段</div>
+          <div class="about-card-label">专业实习</div>
+          <div class="about-card-sub">法院 + 律所</div>
+        </div>
+        <!-- 【可编辑】数据卡片3 -->
+        <div class="about-card">
+          <div class="about-card-num">3.8</div>
+          <div class="about-card-label">北大 GPA</div>
+          <div class="about-card-sub">法律硕士在读</div>
+        </div>
+</section>
+
+<!-- ============ 教育背景 ============ -->
+<!-- 【可编辑区域】教育背景部分 -->
+
+<section class="section" id="education">
+  <!-- education section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">PKU</span>
+    <span class="section-deco-item">法律硕士</span>
+    <span class="section-deco-item">跨学科</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">SYSU</span>
+    <span class="section-deco-item">金融学</span>
+    <span class="section-deco-item">本科</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ EDUCATION</span>
+    <h2 class="section-title">教育背景</h2>
+    <p class="section-subtitle">金融到法学的跨学科路径</p>
+  </div>
+  <div class="entry-list reveal-stagger">
+    <!-- 【可编辑】教育经历1：北京大学 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">北京大学 · 法律硕士（非法本）</div>
+        <div class="entry-date">2025.09 — 至今</div>
+      </div>
+      <div class="entry-org">硕士在读</div>
+      <div class="entry-gpa">
+        <span class="entry-gpa-label">GPA</span> 3.8 / 4.0
+      </div>
+      <ul class="entry-body">
+        <li>研究生入学考试排名：<strong>28/100</strong></li>
+        <li>核心课程：知识产权法（A）、刑法分论（A）、民法总论（A-）、行政法与行政诉讼法（A）</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">知识产权法 A</span>
+        <span class="entry-tag">刑法分论 A</span>
+        <span class="entry-tag">民法总论 A-</span>
+        <span class="entry-tag">行政法 A</span>
+      </div>
+    </div>
+    <!-- 【可编辑】教育经历2：中山大学 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">中山大学 · 金融学（国际金融学院）</div>
+        <div class="entry-date">2021.09 — 2025.06</div>
+      </div>
+      <div class="entry-org">本科毕业</div>
+      <div class="entry-gpa">
+        <span class="entry-gpa-label">GPA</span> 3.7 / 4.0
+      </div>
+      <ul class="entry-body">
+        <li>主修课程：计量经济学（90）、公司治理理论与实践（91）、商法（90）、经济法（92）</li>
+        <li>学院在安排金融学课程的同时，也安排了法律课程，因此对商法、经济法有跨学科理解</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">经济法 92</span>
+        <span class="entry-tag">商法 90</span>
+        <span class="entry-tag">公司治理理论与实践 91</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 实习经历 ============ -->
+<!-- 【可编辑区域】实习经历部分 -->
+
+<section class="section" id="experience">
+  <!-- experience section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">法院</span>
+    <span class="section-deco-item">律所</span>
+    <span class="section-deco-item">民商事</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">诉讼</span>
+    <span class="section-deco-item">尽调</span>
+    <span class="section-deco-item">合同</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ EXPERIENCE</span>
+    <h2 class="section-title">实习经历</h2>
+    <p class="section-subtitle">法院 + 律所</p>
+  </div>
+  <div class="entry-list reveal-stagger">
+    <!-- 【可编辑】实习经历1：海淀区人民法院 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">海淀区人民法院 · 立案庭</div>
+        <div class="entry-date">2026.03 — 2026.06</div>
+      </div>
+      <div class="entry-org">大学生援助咨询员</div>
+      <ul class="entry-body">
+        <li>接待来访当事人，受理工伤赔偿、交通侵权、合同违约、民事执行、诈骗识别等多类型纠纷，快速识别法律关系，当场提出可行的维权路径</li>
+        <li>引导当事人完成诉前准备，就起诉条件、管辖法院选择及起诉状填写提供具体指引，协助完成立案申请</li>
+        <li>结合个案事实检索并援引《劳动合同法》《民法典》《民事诉讼法》等法律及司法解释，向当事人答疑解惑</li>
+        <li>综合评估诉讼成本与胜诉可能性，说明诉讼风险，提出检察抗诉、保险公司索赔等救济方案</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">诉讼咨询</span>
+        <span class="entry-tag">立案审查</span>
+        <span class="entry-tag">法律援助</span>
+      </div>
+    </div>
+    <!-- 【可编辑】实习经历2：炜衡律师事务所 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">北京市炜衡律师事务所 · 争议解决</div>
+        <div class="entry-date">2025.09 — 2025.12</div>
+      </div>
+      <div class="entry-org">实习生</div>
+      <ul class="entry-body">
+        <li>协助处理劳动争议、婚姻家事、合同纠纷等民商事诉讼案件，参与撰写起诉状、上诉状、答辩意见等法律文书</li>
+        <li>参与常年法律顾问单位的日常合同审查，审阅各类合同文本并提出修改建议，累计处理合同数十份</li>
+        <li>协助撰写行业研究报告，参与法律尽职调查项目，完成资料核查与底稿整理</li>
+        <li>负责案件材料系统梳理与证据目录编制，协助完成卷宗归档与文书校对</li>
+        <li>参与律师助理面试工作，协助记录面试评估意见及整理候选人资料</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">民商事诉讼</span>
+        <span class="entry-tag">常年法律顾问项目</span>
+        <span class="entry-tag">尽职调查</span>
+        <span class="entry-tag">法律文书</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 技术项目（完整展示） ============ -->
+<!-- 【可编辑区域】技术项目部分 -->
+
+<section class="section" id="projects">
+  <!-- projects section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">Claude Code</span>
+    <span class="section-deco-item">Python</span>
+    <span class="section-deco-item">DeepSeek</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">GitHub</span>
+    <span class="section-deco-item">Vibe</span>
+    <span class="section-deco-item">WorkBuddy</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ PROJECTS</span>
+    <h2 class="section-title">技术项目</h2>
+    <p class="section-subtitle">独立开发 · 从需求到实现</p>
+  </div>
+  <div class="project-list reveal-stagger">
+    <!-- 【可编辑】项目1：带学背诵管理系统 -->
+    <div class="project-showcase">
+      <div class="project-media">
+        <img src="images/daixue-2.png" alt="带学背诵管理系统">
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <div class="project-title">带学背诵管理系统</div>
+          <div class="project-version">v3.0.0</div>
+        </div>
+        <div class="project-desc">
+          基于艾宾浩斯遗忘曲线管理背诵，支持多学生/多科目背诵追踪，
+          自动计算10个间隔节点的复习日期，并以6种状态精确可视化。
+          包含日/周双计划模式与数据导入导出等功能。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">纯前端架构</span>
+          <span class="project-tag">教育科技</span>
+        </div>
+      </div>
+    </div>
+    <!-- 【可编辑】项目2：pdf2md / MD转换器 -->
+    <div class="project-showcase">
+      <div class="project-media">
+        <img src="images/pdf2md-1.png" alt="MD转换器">
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <div class="project-title">MD转换器</div>
+          <div class="project-version">v4.0.0-beta</div>
+        </div>
+        <div class="project-desc">
+          多格式（PDF、Word、PPT等）转 Markdown 本地工具，适应 AI 更擅长读取 Markdown 的场景。
+          Python + Flask + PyMuPDF + RapidOCR 设计双管线架构，区分文字型/扫描版PDF，
+          支持多进程并行与 AI 校对，提供 Web 可视化界面及 PyInstaller 打包分发。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">OCR</span>
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">双管线架构</span>
+        </div>
+      </div>
+    </div>
+    <!-- 【可编辑】项目3：Prompt对比实验室 -->
+    <div class="project-showcase">
+      <div class="project-media">
+        <img src="images/prompt-1.png" alt="Prompt对比实验室">
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <div class="project-title">Prompt对比实验室</div>
+          <div class="project-version">v1.2.0</div>
+        </div>
+        <div class="project-desc">
+          多 AI 模型回答对比与交叉评分平台，输入同一 Prompt 即可调用多个大模型并排对比。
+          核心实现多评委交叉评分算法，评委与被测试 AI 双向回避，并用标准差检测分歧。
+          支持 AI 商定评分标准与人类自定义评分标准。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">LLM评测</span>
+          <span class="project-tag">交叉评分</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 【可编辑】其他技术探索 -->
+  <div class="mini-projects reveal">
+    <h3 class="mini-projects-title">其他技术探索</h3>
+    <div class="mini-projects-grid">
+      <div class="mini-project">
+        <div class="mini-project-name">Obsidian+Claude Code</div>
+        <div class="mini-project-desc">搭建个人AI文件库，由AI辅助管理文件</div>
+      </div>
+      <div class="mini-project">
+        <div class="mini-project-name">本地LLM部署</div>
+        <div class="mini-project-desc">使用LM Studio尝试中…</div>
+      </div>
+      <div class="mini-project">
+        <div class="mini-project-name">CLAUDEmd、rule撰写</div>
+        <div class="mini-project-desc">更好使用AI Agent</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 校园经历 ============ -->
+<!-- 【可编辑区域】校园经历部分 -->
+
+<section class="section" id="campus">
+  <!-- campus section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">新媒体</span>
+    <span class="section-deco-item">法联</span>
+    <span class="section-deco-item">活动</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">校友</span>
+    <span class="section-deco-item">理论</span>
+    <span class="section-deco-item">班长</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ CAMPUS</span>
+    <h2 class="section-title">校园经历</h2>
+    <p class="section-subtitle">学生组织 × 活动策划 × 公众号运营</p>
+  </div>
+  <div class="entry-list reveal-stagger">
+    <!-- 【可编辑】校园经历1 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">北京大学新青年理论研究室 · 政策研究部</div>
+        <div class="entry-date">2026 — 至今</div>
+      </div>
+      <div class="entry-org">干事 · 北京大学</div>
+      <ul class="entry-body">
+        <li>参与新媒体与校园社群相关课题研究，负责文献梳理、数据处理与报告撰写</li>
+        <li>参与撰写 AI 对高校学生信息获取的影响课题研究</li>
+      </ul>
+    </div>
+    <!-- 【可编辑】校园经历2 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">北京大学法律硕士联合会 · 媒体运营部</div>
+        <div class="entry-date">2026 — 至今</div>
+      </div>
+      <div class="entry-org">部长 · 北京大学法学院</div>
+      <ul class="entry-body">
+        <li>负责法联微信公众号推文的策划、设计与排版，提升内容传播效果</li>
+        <li>参与法联品牌活动的宣传与传播工作</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">公众号运营</span>
+        <span class="entry-tag">内容策划</span>
+      </div>
+    </div>
+    <!-- 【可编辑】校园经历3 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">北京大学法律硕士联合会 · 职业发展部</div>
+        <div class="entry-date">2025 — 2026</div>
+      </div>
+      <div class="entry-org">干事 · 北京大学法学院</div>
+      <ul class="entry-body">
+        <li>策划"实习者说""识实务者"等活动，联系对接嘉宾并统筹活动安排</li>
+        <li>参与筹备第七届五校"职海有涯"系列讲座，负责现场调度与人员安排</li>
+        <li>参与组织2025年法学院"人才沙龙""成公杯"等品牌活动</li>
+      </ul>
+      <div class="entry-tags">
+        <span class="entry-tag">活动策划</span>
+        <span class="entry-tag">嘉宾对接</span>
+        <span class="entry-tag">现场执行</span>
+      </div>
+    </div>
+    <!-- 【可编辑】校园经历4 -->
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-title">班级与校友工作</div>
+        <div class="entry-date">2025 — 至今</div>
+      </div>
+      <div class="entry-org">北京大学</div>
+      <ul class="entry-body">
+        <li>北京大学法学院研究生会干事</li>
+        <li>北京大学2025级1000+领航培养计划班级班长</li>
+        <li>法学院校友办、教务办学生助理</li>
+        <li>法学院党建中心组织建设部干事</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 技能 ============ -->
+<!-- 【可编辑区域】技能部分 -->
+
+<section class="section" id="skills">
+  <!-- skills section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">检索</span>
+    <span class="section-deco-item">合同</span>
+    <span class="section-deco-item">文书</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">Vibecoding</span>
+    <span class="section-deco-item">AI</span>
+    <span class="section-deco-item">Agent</span>
+  </div>
+
+  <div class="section-header reveal">
+    <span class="section-label">◆ SKILLS</span>
+    <h2 class="section-title">技能与能力</h2>
+    <p class="section-subtitle">法律专业 · 技术能力 · 综合素养</p>
+  </div>
+  <div class="skills-grid">
+    <div class="reveal">
+      <!-- 【可编辑】技能分组标题 -->
+      <div class="skill-group-title">AI 与技术</div>
+      <!-- 【可编辑】技能标签列表 -->
+      <div class="skill-tags">
+        <span class="skill-tag">Vibe Coding / AI 工具</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">React / TypeScript</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="skill-group-title">法律专业</div>
+      <div class="skill-tags">
+        <span class="skill-tag">民商事诉讼</span>
+        <span class="skill-tag">合同审查</span>
+        <span class="skill-tag">法律文书撰写</span>
+        <span class="skill-tag">数据合规与保护专业能力证书</span>
+        <span class="skill-tag">英语 (CET-6)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系方式 ============ -->
+<!-- 【可编辑区域】联系方式部分 -->
+  <!-- contact section 两侧装饰标签 -->
+  <div class="section-deco section-deco-left" aria-hidden="true">
+    <span class="section-deco-item">Email</span>
+    <span class="section-deco-item">Phone</span>
+    <span class="section-deco-item">WeChat</span>
+  </div>
+  <div class="section-deco section-deco-right" aria-hidden="true">
+    <span class="section-deco-item">北京</span>
+    <span class="section-deco-item">北大</span>
+    <span class="section-deco-item">随时</span>
+  </div>
+<section class="section contact-section" id="contact">
+  <div class="section-header reveal">
+    <span class="section-label">◆ CONTACT</span>
+    <h2 class="section-title">联系我</h2>
+    <p class="section-subtitle">期待与您交流</p>
+  </div>
+ <p class="contact-intro reveal">
+    如果我的背景与您的需求匹配，欢迎随时联系。
+  </p>
+  <div class="contact-cards reveal-stagger">
+    <!-- 【可编辑】电话号码 -->
+    <a href="tel:13739726919" class="contact-card">
+      <div class="contact-card-icon">📱</div>
+      <div class="contact-card-label">PHONE</div>
+      <div class="contact-card-value">137-3972-6919</div>
+    </a>
+    <!-- 【可编辑】邮箱 -->
+    <a href="mailto:jiayaoan25@stu.pku.edu.cn" class="contact-card">
+      <div class="contact-card-icon">✉️</div>
+      <div class="contact-card-label">EMAIL</div>
+      <div class="contact-card-value">jiayaoan25@stu.pku.edu.cn</div>
+    </a>
+    <!-- 【可编辑】地址 -->
+    <div class="contact-card">
+      <div class="contact-card-icon">📍</div>
+      <div class="contact-card-label">LOCATION</div>
+      <div class="contact-card-value">北京市海淀区 · 北京大学</div>
+    </div>
+  </div>
+  <!-- 【可编辑】页脚版权信息 -->
+  <p class="contact-footer reveal">
+    © 2026 安珈瑶 Anthea
+  </p>
+</section>
+
+<script>
+(function() {
+  var progressBar = document.getElementById('progressBar');
+  var backTop = document.getElementById('backTop');
+  var topnav = document.getElementById('topnav');
+  var lastScroll = 0;
+
+  window.addEventListener('scroll', function() {
+    var scrollH = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = (window.scrollY / scrollH) * 100;
+    progressBar.style.width = progress + '%';
+
+    if (window.scrollY > 500) {
+      backTop.classList.add('visible');
+    } else {
+      backTop.classList.remove('visible');
+    }
+
+    var current = window.scrollY;
+    if (current > 200 && current > lastScroll) {
+      topnav.style.transform = 'translateY(-100%)';
+    } else {
+      topnav.style.transform = 'translateY(0)';
+    }
+    lastScroll = current;
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(el) {
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
