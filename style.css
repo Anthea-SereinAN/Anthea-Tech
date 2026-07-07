@@ -4,14 +4,14 @@
   --accent-2: #b14cd9;
   --accent-3: #d94c8a;
   --bg: #0d1117;
-  --card-bg: #1c2128;
-  --card-border: #3c444d;
+  --card-bg: #161b22;
+  --card-border: #30363d;
   --text: #e6edf3;
-  --text-secondary: #aeb7c1;
-  --text-muted: #8b949e;
-  --tag-bg: rgba(110,64,201,0.22);
-  --tag-border: rgba(110,64,201,0.5);
-  --tag-text: #e9e0ff;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --tag-bg: rgba(110,64,201,0.15);
+  --tag-border: rgba(110,64,201,0.3);
+  --tag-text: #d2c4f0;
 }
 
 /* ============ 重置 ============ */
@@ -299,7 +299,7 @@ body::before {
 }
 .project-showcase {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 0.55fr 1fr;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 14px;
@@ -311,10 +311,13 @@ body::before {
   box-shadow: 0 12px 40px rgba(110, 64, 201, 0.12);
 }
 .project-media {
-  aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #0d1117;
   border-right: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 0;
 }
 .project-media img {
   width: 100%; height: 100%;
@@ -325,7 +328,7 @@ body::before {
   transform: scale(1.03);
 }
 
-/* ============ 项目封面图（CSS/SVG） ============ */
+/* ============ 项目封面图（CSS/SVG 昼版配色） ============ */
 .project-media .cover-bg {
   position: absolute; inset: 0; z-index: 0;
 }
@@ -340,39 +343,36 @@ body::before {
 .project-media .cover-label {
   position: absolute; bottom: 0.8rem; left: 1rem; z-index: 2;
   font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
-  color: rgba(255,255,255,0.85);
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  color: rgba(30,41,59,0.7);
+  text-shadow: 0 1px 4px rgba(255,255,255,0.3);
   pointer-events: none;
 }
 
-/* Daixue: 暗绿弧线风 */
+/* Daixue: 鼠尾草绿暖色风 */
 .project-cover-daixue {
   position: relative;
-  background: #1a2f23;
+  background: linear-gradient(135deg, #FAF8F5, #EBF2EC);
 }
 .project-cover-daixue .cover-bg {
-  background: #1a2f23;
+  background: linear-gradient(135deg, #FAF8F5, #EBF2EC);
 }
 
-/* Pdf2md: 暗蓝紫流动线风 */
+/* Pdf2md: 冷白蓝紫技术风 */
 .project-cover-pdf2md {
   position: relative;
-  background: #131525;
+  background: #FAFBFC;
 }
 .project-cover-pdf2md .cover-bg {
-  background: #131525;
-}
-.project-cover-pdf2md .cover-bg::after {
-  content: none;
+  background: #FAFBFC;
 }
 
-/* PromptLab: 暗紫散点风 */
+/* PromptLab: 梦幻渐变风 */
 .project-cover-promptlab {
   position: relative;
-  background: #16121F;
+  background: linear-gradient(160deg, #F0F4FF, #F5F3FF, #FAF5FF);
 }
 .project-cover-promptlab .cover-bg {
-  background: #16121F;
+  background: linear-gradient(160deg, #F0F4FF, #F5F3FF, #FAF5FF);
 }
 .project-info {
   padding: 1.8rem;
@@ -402,19 +402,14 @@ body::before {
   padding: 3px 9px; border-radius: 4px;
 }
 .project-link {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 13px; color: #c9d1d9;
-  background: rgba(110,64,201,0.15);
-  border: 1px solid rgba(110,64,201,0.4);
-  padding: 6px 14px; border-radius: 6px;
+  font-size: 13px; font-weight: 500;
+  color: var(--accent-2);
   text-decoration: none;
-  margin-top: 10px;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 .project-link:hover {
-  background: rgba(110,64,201,0.3);
-  border-color: var(--accent);
-  color: #e9e0ff;
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* ============ 其他技术探索 ============ */
@@ -470,15 +465,21 @@ body::before {
   border: 1px solid var(--tag-border);
   padding: 2px 8px; border-radius: 4px;
 }
+
+/* ============ GPA 标签 ============ */
 .entry-gpa {
-  display: inline-flex; align-items: center; gap: 4px;
-  font-size: 13px; font-weight: 700; color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  padding: 4px 12px; border-radius: 6px;
-  margin-bottom: 0.6rem;
-  box-shadow: 0 2px 8px rgba(110, 64, 201, 0.3);
+  display: inline-block;
+  font-size: 13px; font-weight: 600;
+  color: #e6edf3;
+  background: linear-gradient(135deg, #4A90D9, var(--accent));
+  padding: 3px 12px; border-radius: 6px;
+  margin-bottom: 0.8rem;
 }
-.entry-gpa-label { font-size: 11px; font-weight: 500; opacity: 0.85; }
+.entry-gpa-label {
+  font-size: 11px; font-weight: 500;
+  color: rgba(230,237,243,0.7);
+  margin-right: 4px;
+}
 
 /* ============ 联系 ============ */
 .contact-section { text-align: center; }
@@ -521,8 +522,8 @@ body::before {
   .topnav-link { font-size: 12px; }
   .hero { padding: 5rem 1.5rem 3rem 1.5rem; }
   .hero-deco { display: none; }
-  .hero-container { grid-template-columns: 1fr; gap: 2rem; text-align: center; justify-items: center; }
-  .hero-main { text-align: center; padding-left: 0; width: 100%; max-width: 100%; }
+  .hero-container { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+  .hero-main { text-align: center; }
   .hero-name { font-size: 32px; }
   .hero-portrait { width: 180px; height: 180px; margin: 0 auto; }
   .hero-contact { justify-content: center; }
@@ -539,6 +540,91 @@ body::before {
   .mini-projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .entry-head { flex-direction: column; }
-  .contact-cards { flex-direction: column; align-items: center; gap: 1rem; }
-  .contact-card { width: 100%; max-width: 320px; }
+  .contact-cards { flex-direction: column; align-items: center; }
+}
+
+/* ============ 亮色主题覆盖 ============ */
+body.theme-light {
+  --accent: #7C5CE7;
+  --accent-2: #B14CD9;
+  --accent-3: #EC4899;
+  --bg: #F0F4FF;
+  --card-bg: rgba(255,255,255,0.6);
+  --card-border: rgba(124,92,231,0.15);
+  --text: #1E293B;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --tag-bg: rgba(124,92,231,0.1);
+  --tag-border: rgba(124,92,231,0.2);
+  --tag-text: #6D4FD6;
+  background: linear-gradient(160deg, #F0F4FF, #F5F3FF, #FAF5FF, #FFF5FA);
+  background-attachment: fixed;
+}
+body.theme-light::before {
+  background-image: radial-gradient(circle at 1px 1px, rgba(124,92,231,0.05) 1px, transparent 0);
+}
+body.theme-light .topnav {
+  background: rgba(255,255,255,0.7);
+  border-bottom-color: rgba(124,92,231,0.1);
+}
+body.theme-light .section {
+  background: transparent;
+}
+body.theme-light .topnav-link:hover { color: var(--accent); }
+body.theme-light .aurora-blob { opacity: 0.22; }
+body.theme-light .hero-greeting {
+  color: #1E293B;
+  background: none;
+  -webkit-text-fill-color: #1E293B;
+}
+body.theme-light .hero-name {
+  color: #475569;
+}
+body.theme-light .hero-en {
+  color: #7C5CE7;
+}
+body.theme-light .hero-deco-item,
+body.theme-light .section-deco-item {
+  background: rgba(255,255,255,0.5);
+  border-color: rgba(124,92,231,0.1);
+}
+body.theme-light .hero-contact-item {
+  background: rgba(255,255,255,0.5);
+}
+body.theme-light .hero-divider {
+  background: linear-gradient(90deg, transparent, rgba(124,92,231,0.3), transparent);
+}
+body.theme-light .back-top {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 4px 20px rgba(124,92,231,0.3);
+}
+body.theme-light .hero-cta {
+  background: linear-gradient(135deg, #4A90D9, var(--accent));
+  box-shadow: 0 4px 20px rgba(124,92,231,0.25);
+}
+body.theme-light .entry-gpa {
+  background: linear-gradient(135deg, #4A90D9, var(--accent));
+}
+
+/* ============ 主题切换按钮 ============ */
+.theme-toggle {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; flex-shrink: 0;
+  font-size: 16px; line-height: 1;
+  transition: border-color 0.2s, transform 0.2s;
+  margin-left: 0.5rem;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  transform: scale(1.1);
+}
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+body.theme-light .theme-toggle .icon-sun { display: block; }
+body.theme-light .theme-toggle .icon-moon { display: none; }
+
+@media (max-width: 768px) {
+  .theme-toggle { width: 32px; height: 32px; font-size: 14px; }
 }
