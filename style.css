@@ -351,6 +351,21 @@ body::before {
   border: 1px solid var(--card-border);
   padding: 3px 9px; border-radius: 4px;
 }
+.project-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; color: #c9d1d9;
+  background: rgba(110,64,201,0.15);
+  border: 1px solid rgba(110,64,201,0.4);
+  padding: 6px 14px; border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+.project-link:hover {
+  background: rgba(110,64,201,0.3);
+  border-color: var(--accent);
+  color: #e9e0ff;
+}
 
 /* ============ 其他技术探索 ============ */
 .mini-projects { margin-top: 1rem; }
