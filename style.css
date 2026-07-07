@@ -311,7 +311,7 @@ body::before {
   box-shadow: 0 12px 40px rgba(110, 64, 201, 0.12);
 }
 .project-media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #0d1117;
   border-right: 1px solid var(--card-border);
@@ -345,49 +345,34 @@ body::before {
   pointer-events: none;
 }
 
-/* Daixue: 暖绿手账风 */
+/* Daixue: 暗绿弧线风 */
 .project-cover-daixue {
   position: relative;
-  background: #3A5A40;
+  background: #1a2f23;
 }
 .project-cover-daixue .cover-bg {
-  background:
-    radial-gradient(ellipse 200px 140px at 30% 30%, rgba(199,111,70,0.15), transparent),
-    radial-gradient(ellipse 180px 120px at 70% 70%, rgba(143,185,150,0.12), transparent),
-    linear-gradient(135deg, #3A5A40 0%, #4A7C59 50%, #5B8C6A 100%);
+  background: #1a2f23;
 }
 
-/* Pdf2md: 蓝紫网格科技风 */
+/* Pdf2md: 暗蓝紫流动线风 */
 .project-cover-pdf2md {
   position: relative;
-  background: #1A1D26;
+  background: #131525;
 }
 .project-cover-pdf2md .cover-bg {
-  background:
-    linear-gradient(180deg, #1A1D26 0%, #1E2230 100%),
-    radial-gradient(ellipse 200px 140px at 25% 25%, rgba(74,144,217,0.08), transparent),
-    radial-gradient(ellipse 180px 120px at 75% 60%, rgba(124,92,231,0.08), transparent);
-  background-blend-mode: normal, screen, screen;
+  background: #131525;
 }
 .project-cover-pdf2md .cover-bg::after {
-  content: ''; position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(74,144,217,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74,144,217,0.04) 1px, transparent 1px);
-  background-size: 24px 24px;
+  content: none;
 }
 
-/* PromptLab: 多彩柔和渐变 */
+/* PromptLab: 暗紫散点风 */
 .project-cover-promptlab {
   position: relative;
-  background: #1E293B;
+  background: #16121F;
 }
 .project-cover-promptlab .cover-bg {
-  background:
-    radial-gradient(ellipse 160px 100px at 20% 20%, rgba(59,130,246,0.12), transparent),
-    radial-gradient(ellipse 140px 90px at 80% 80%, rgba(236,72,153,0.10), transparent),
-    radial-gradient(ellipse 120px 80px at 50% 50%, rgba(139,92,246,0.08), transparent),
-    linear-gradient(160deg, #1E293B 0%, #1E1B3A 40%, #2D1B3D 70%, #2A1A2E 100%);
+  background: #16121F;
 }
 .project-info {
   padding: 1.8rem;
