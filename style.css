@@ -535,7 +535,7 @@ body::before {
   .about-photo { width: 100%; height: auto; aspect-ratio: 4 / 3; }
   .about-cards { grid-template-columns: repeat(3, 1fr); }
   .project-showcase { grid-template-columns: 1fr; }
-  .project-media { border-right: none; border-bottom: 1px solid var(--card-border); }
+  .project-media { border-right: none; border-bottom: 1px solid var(--card-border); min-height: 180px; }
   .project-info { padding: 1.5rem; }
   .mini-projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
